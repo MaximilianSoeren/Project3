@@ -1,87 +1,62 @@
-<h1 align="center"><project-name>Spotify Song Recommender</h1>
+# Spotify Song Recommender
 
-<p align="center"><project-description>This is a small app, build with streamlit. It will reccomend you another song similar to one you like</p> 
-
-<h2 align="center">How it works</h2>
-<p align="center"><how-it-works>You can tell it a song you like, it will then webscrape the BillBoards hot 100, if the song you choose is in there, it will recommend another song from the hot 100 that sounds similar (determined via Spotify Audio features and ML-Clustering). If your song is not there it will recommend one from Spotify determined in the same way.</p>
-
-## Sections
-
-- [Installation]
-
-- [Try it out](<Homepage url>)
+This is a small app, build with Streamlit. It will recommend you another song similar to one you like</p> 
 
 
-## Screenshots
+## How it works
 
-![Home Page](/screenshots/1.png "Home Page")
+You can tell it a song you like, it will then webscrape the BillBoards hot 100, if the song you choose is in there, it will recommend another song from the hot 100 that sounds similar (determined via Spotify Audio features and ML-Clustering). If your song is not there it will recommend one from Spotify determined in the same way.</p>
 
-![](/screenshots/2.png)
+## Getting Started
 
-![](/screenshots/3.png)
+If you want to host it on your local machine. [See Here](#executing-program)
+### Dependencies
 
-## Available Commands
+**Since this program used a Kaggle dataset that no longer is publicly available, it will not work.
+You can however take another dataset or use the Spotify-API to scrape the data from there and rewrite the program slightly to make it work**
 
-In the project directory, you can run:
+### Installing
 
-### `npm start" : "react-scripts start"`,
+If you want to run the program locally Install dependencies via 
 
-The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
-You will also see any lint errors in the console.
+``` pip install -r requirements.txt ```
 
-### `"npm run build": "react-scripts build"`,
+### Executing program
 
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
+Then once you have activated your virtual environment in the terminal
+simply write
 
-### `"npm run test": "react-scripts test"`,
+``` streamlit run spotify_info.py ```
 
-Launches the test runner in the interactive watch mode.
+A new browser window should automatically open and you should be able to see the streamlit interface.
+You now can simply enter a song into the interface and press search. The recommended song should be given to you in a couple of seconds.
 
-### `"npm run dev": "concurrently "nodemon server" "npm run start"`,
+#### Please take notice that this AS IS will no longer work [see here](#dependencies)
+## Help
 
-For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
+**This project is abandoned**, if you want to modify it for your own dataset or usage, feel free to do so.
+If you want/need help, you can always reach out to me.
+## Authors
 
-### `"serve": "node server"`
+Maximilian Sören Pollak
 
-For running the server file on you can use this command.
+[Github](https://github.com/maximiliansoerenpollak)  
+[LinkedIn](https://linkedin.com/in/msoerenpollak)
 
-### `npm run serve`
+## Version History
 
-## Built With
+* 0.2
+    * Fixed README
+    * Added .gitignore
+    * Added MIT License
+* 0.1
+    * Initial Commit
 
-- JavaScript
-- Node
-- NPM
-- Webpack
-- HTML
-- CSS
+## License
 
-## Future Updates
+This project is licensed under the MIT License - see the LICENSE.txt file for details
 
-- [ ] Reliable Storage
+## Acknowledgments
 
-## Author
-
-**Rohit Jain**
-
-- [Profile](https://github.com/rohit19060 "Rohit jain")
-- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
-- [Website](https://kingtechnologies.in "Welcome")
-
-## 🤝 Support
-
-Contributions, issues, and feature requests are welcome!
-
-Give a ⭐️ if you like this project!
-# Spotify-Song-Recommender
-
-
-Webscraping  is wshere data gets scraped from Billboard Top100 
-
-Ml is where the Machine Learning Model was trained and saved. 
-
-Spotify_Info is where all the rest is.
-  -Website rendering
-  -All Functions needed to retrieve clusters of new songs / old songs
-  -Functions to grab the correct Values
-  
+Inspiration, code snippets, etc.
+* [Ironhack-Project](https://github.com/ironhack-labs/lab-unsupervised-learning-intro)
