@@ -30,8 +30,6 @@ def get_artist():
         artist_list.append(i.get_text())
     return artist_list
 # %%
-list = [1, 2, 3]
-list.pop
 # %%
 # ugly cleaning dataframe
 def make_dataframe():
